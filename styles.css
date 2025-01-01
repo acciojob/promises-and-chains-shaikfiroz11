@@ -5,7 +5,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ensure the body fills the screen */
+  height: 100vh;
 }
 
 form {
@@ -13,26 +13,27 @@ form {
   border: 1px solid black;
   display: flex;
   width: 350px;
-  height: 300px;
+  height: 250px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-form span {
+div {
   width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-input[type="submit"] {
+button {
   background-color: green;
-  padding: 3px;
-  border-radius: 3px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: blue;
 }
