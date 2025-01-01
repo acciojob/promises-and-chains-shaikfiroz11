@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
           if (age >= 18) {
             resolve({ message: `Welcome, ${name}. You can vote.`, name });
           } else {
-            reject({ message: `Oh sorry, ${name}. You aren't old enough.`, name });
+            // Ensure no extra space after the name for rejection message
+            reject({ message: `Oh sorry ${name}. You aren't old enough.`, name });
           }
         }, 4000);
       });
